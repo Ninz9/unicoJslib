@@ -29,4 +29,5 @@
         url.searchParams.append('base_url', thisPageUrl.toString());
         document.getElementById('expertsAiWidget').src =  url;
     }
+    console.log("included");
 }());
