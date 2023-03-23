@@ -1,4 +1,4 @@
-window.addEventListener('message', function (e) {
+(function (){window.addEventListener('message', function (e) {
     if (e.origin != "https://experts.ai") return;
     document.getElementById('expertsAiWidget').style.height = e.data + 'px';
 }, false);
@@ -30,5 +30,5 @@ if (searchParam.has('widget')) {
     url.searchParams.append('base_url', thisPageUrl.toString());
     document.getElementById('expertsAiWidget').src = url;
 }
-console.log("included");
+console.log("included");})();
 
